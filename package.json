@@ -1,0 +1,19 @@
+{
+  "name": "octobrood",
+  "version": "1.0.0",
+  "description": "Spawning the octopi",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xMTinkerer/octobrood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xMTinkerer/octobrood/issues"
+  },
+  "homepage": "https://github.com/xMTinkerer/octobrood#readme"
+}
