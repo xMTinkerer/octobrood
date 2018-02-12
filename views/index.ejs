@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="octobrood">
+  <head>
+    <style>
+
+    </style>
+
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+
+    <link rel='stylesheet' href='/public/stylesheets/style.css' />    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-messages.js"></script>
+
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    
+    <script type="text/javascript" src="/public/js/angular-app.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body ng-controller="octoController">
+    <div class="container-fluid">
+
+      <% include header %> 
+<form name="child">
+      <div class="checkbox" ng-click="doToggleChild()">
+        <label>
+          <input name="childToggle" id="childToggle" ng-model="childToggle"  type="checkbox" data-toggle="toggle" data-on="Running" data-off="Stopped" data-onstyle="success" data-offstyle="danger">
+          Child Process {{childToggle.checked}}
+        </label>
+      </div>
+</form>
+
+    </div>
+  </body>
+</html>
