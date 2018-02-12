@@ -4,6 +4,7 @@
   "description": "Spawning the octopi",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/xMTinkerer/octobrood/issues"
   },
-  "homepage": "https://github.com/xMTinkerer/octobrood#readme"
+  "homepage": "https://github.com/xMTinkerer/octobrood#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "serve-favicon": "^2.4.5",
+    "winston": "^3.0.0-rc1"
+  }
 }

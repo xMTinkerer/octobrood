@@ -1,4 +1,4 @@
-const longComputation = () => {
+const doStuff = () => {
   let sum = 0;
   while( true ) {
      sum ++;
@@ -7,6 +7,6 @@ const longComputation = () => {
 };
 
 process.on('message', (msg) => {
-  const sum = longComputation();
-  process.send(sum);
+  const sum = doStuff();
+  
 });
