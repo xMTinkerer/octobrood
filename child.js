@@ -7,6 +7,7 @@ const doStuff = () => {
 };
 
 process.on('message', (msg) => {
+
   const sum = doStuff();
   
 });

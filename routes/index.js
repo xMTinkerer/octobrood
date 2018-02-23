@@ -35,7 +35,8 @@ router.post( '/child/start', function( req, res, next ) {
 
 router.post( '/child/stop', function( req, res, next ) {
 
-	child.kill();
+	child.kill( 'SIGTERM' );
+	//child.send( 'stop' );
 	isRunning = false;
 	res.status( 200 ).send( 'stopped' );
 	winston.loggers.get('main').info( 'Stopping child' );
