@@ -42,7 +42,7 @@ router.post( '/child/stop', function( req, res, next ) {
 	winston.loggers.get('main').info( 'Stopping child' );
 
 	// Tee it up for the next start
-	child   = fork( 'child.js' );
+	//child   = fork( 'child.js' );
 });
 
 
